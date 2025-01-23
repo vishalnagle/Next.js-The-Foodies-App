@@ -5,6 +5,10 @@ import MealsGrid from "@/components/meals/meals-grid";
 import { getMeals } from "@/lib/meals";
 import MealsLoadingPage from "./loading-out";
 
+export const metadata = {
+    title: 'All meals',
+    description: 'Check the delicious meals',
+  };
 
 const Meals = async () => {
     const meals = await getMeals();
